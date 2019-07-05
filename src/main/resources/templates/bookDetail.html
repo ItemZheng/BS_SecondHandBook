@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>书籍详情</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../static/lib/animate-css/animate.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="../static/css/bookDetail.css" rel="stylesheet">
+
+    <!-- =======================================================
+      Theme Name: Imperial
+      Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+      Author: BootstrapMade.com
+      Author URL: https://bootstrapmade.com
+    ======================================================= -->
+</head>
+
+<body>
+<div id="preloader"></div>
+
+<!--==========================
+Header Section
+============================-->
+<!--==========================
+Header Section
+============================-->
+<header id="header">
+    <div class="container">
+
+        <div id="logo" class="pull-left">
+            <a href="/fe/main#search"><img src="../static/img/logo.png" alt="" title="" /></img></a>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="/fe/main#search">搜索</a></li>
+                <li><a href="/fe/main#books">书库</a></li>
+                <li><a href="#">订单</a></li>
+                <li><a href="#" class="menu-has-children">消息</a>
+                    <ul>
+                        <li><a href="#" class="menu-has-children">未读消息</a>
+                            <ul>
+                                <li><a href="#">ItemZheng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">发起聊天</a></li>
+                    </ul>
+
+                </li>
+                <li class="menu-has-children"><a href="">个人中心</a>
+                    <ul>
+                        <li><a href="#">基本资料</a></li>
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="/fe/addBook">发布书籍</a></li>
+                    </ul>
+                </li>
+                <li><a id="welcome_info">欢迎，ItemZheng</a></li>
+            </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+    </div>
+</header>
+
+<!--==========================
+About Section
+============================-->
+<section id="about">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title" id="book_name">边干边学</h3>
+                <div class="section-title-divider"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container about-container wow fadeInUp" style="margin-top: 20px;">
+        <div class="row">
+
+            <div class="col-lg-3 about-img">
+                <img id="book_ori_img" src="https://img1.doubanio.com/view/subject/m/public/s5897218.jpg" alt="">
+            </div>
+            <div class="col-lg-3 about-img">
+                <img id="book_current_img" src="https://img1.doubanio.com/view/subject/m/public/s5897218.jpg" alt="">
+            </div>
+
+            <div class="col-md-6 about-content">
+                <h2 class="about-title" id="author">作者：陈文智</h2>
+                <p class="about-text" id="summary">
+                    《普通高等教育"十一五"国家级规划教材•边干边学:LINUX内核指导》是一本学习Linux内核的指导教材。根据作者在浙江大学计算机学院多年的教学实践，教材内容选定了Linux环境，shell编程，时钟与定时器、系统调用，进程调度，进程同步，虚拟存储，共享内存，设备驱动，文件系统，内容模块等18章内容，其相关源代码贯穿Linux内核。学习操作系统须动手实践。《边干边学:LINUX内核指导》的特点就是边干边学，为此在每章里都安排了实验内容，章节围绕实验目的展开，以求在实验中掌握Linux内容，在实验中融会贯通。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==========================
+Services Section
+============================-->
+<section id="detail">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">书籍详情</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">书籍的相关信息</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 service-item">
+                <div class="service-icon"><i class="fa fa-user-circle-o"></i></div>
+                <h4 class="service-title"><a href="">发布者信息</a></h4>
+                <p class="service-description" id="owner_info">
+                    邮箱：itemzheng@qq.com <br>
+                    QQ ：1563078464 <br>
+                    微信：zhengyuhang785 <br>
+                    电话：18868102513
+                </p>
+            </div>
+            <div class="col-md-4 service-item">
+                <div class="service-icon"><i class="fa fa-info-circle"></i></div>
+                <h4 class="service-title"><a href="">书籍基本信息</a></h4>
+                <p class="service-description" id="basic_info">
+                    书籍类别：计算机与网络类 <br>
+                    ISBN: 9787308030731 <br>
+                    出版社：浙江大学出版社 <br>
+                    豆瓣评分：9.2
+                </p>
+            </div>
+            <div class="col-md-4 service-item">
+                <div class="service-icon"><i class="fa fa-money"></i></div>
+                <h4 class="service-title"><a href="">价格</a></h4>
+                <p class="service-description" id="book_price">
+                    售价：22 <br>
+                    新书参考价：55元
+                </p>
+            </div>
+            <div class="col-md-12 service-item">
+                <div class="service-icon"><i class="fa fa-area-chart"></i></div>
+                <h4 class="service-title"><a href="">用户描述</a></h4>
+                <p class="service-description" id="owner_description">测试一下搜索吧</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="book_action">
+    <div class="row">
+        <div class="col-md-5 col-md-push-2">
+            <div class="form">
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="text-center"><button type="submit" id="buy_book">购买</button></div>
+                    <div class="text-center"><button type="submit" id="chat_book">咨询</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==========================
+Footer
+============================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright">
+                    &copy; Copyright <strong>ItemZheng</strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="http://www.itemzheng.top:8080/">Item Zheng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Required JavaScript Libraries -->
+<script src="../static/lib/jquery/jquery.min.js"></script>
+<script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/lib/superfish/hoverIntent.js"></script>
+<script src="../static/lib/superfish/superfish.min.js"></script>
+<script src="../static/lib/morphext/morphext.min.js"></script>
+<script src="../static/lib/wow/wow.min.js"></script>
+<script src="../static/lib/stickyjs/sticky.js"></script>
+<script src="../static/lib/easing/easing.js"></script>
+
+<!-- Template Specisifc Custom Javascript File -->
+<script src="../static/js/bookDetail.js"></script>
+
+<script src="../static/contactform/contactform.js"></script>
+
+
+</body>
+
+</html>

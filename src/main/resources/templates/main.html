@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>主页</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+
+
+    <!-- Libraries CSS Files -->
+    <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../static/lib/animate-css/animate.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="../static/css/mainPage.css" rel="stylesheet">
+
+    <!-- Required JavaScript Libraries -->
+    <script src="../static/lib/jquery/jquery.min.js"></script>
+    <script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/lib/superfish/hoverIntent.js"></script>
+    <script src="../static/lib/superfish/superfish.min.js"></script>
+    <script src="../static/lib/morphext/morphext.min.js"></script>
+    <script src="../static/lib/wow/wow.min.js"></script>
+    <script src="../static/lib/stickyjs/sticky.js"></script>
+    <script src="../static/lib/easing/easing.js"></script>
+
+    <!-- Template Specisifc Custom Javascript File -->
+    <script src="../static/js/mainPage.js"></script>
+
+    <script src="../static/contactform/contactform.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-zh_CN.min.js"></script>
+
+</head>
+
+<body>
+<div id="preloader"></div>
+
+<!--==========================
+Header Section
+============================-->
+<header id="header">
+    <div class="container">
+
+        <div id="logo" class="pull-left">
+            <a href="#search"><img src="../static/img/logo.png" alt="" title="" /></img></a>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="#search">搜索</a></li>
+                <li><a href="#books">书库</a></li>
+                <li><a href="#">订单</a></li>
+                <li><a href="#" class="menu-has-children">消息</a>
+                    <ul>
+                        <li><a href="#" class="menu-has-children">未读消息</a>
+                            <ul>
+                                <li><a href="#">ItemZheng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">发起聊天</a></li>
+                    </ul>
+
+                </li>
+                <li class="menu-has-children"><a href="">个人中心</a>
+                    <ul>
+                        <li><a href="#">基本资料</a></li>
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="/fe/addBook">发布书籍</a></li>
+                    </ul>
+                </li>
+                <li><a id="welcome_info">欢迎，ItemZheng</a></li>
+            </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+    </div>
+</header>
+<!-- #header -->
+
+<!--==========================
+About Section
+============================-->
+<section id="search">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">搜索</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">根据关键词搜索书籍</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-md-push-2">
+            <div class="info">
+                <div>
+                    <i class="fa fa-key"></i>
+                    <p>关键词</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-book"></i>
+                    <p>类型</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-sellsy"></i>
+                    <p>目的</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-sort"></i>
+                    <p>排序</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-5 col-md-push-2">
+            <div class="form">
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="search_key" placeholder="作者/书名/ISBN/出版社" />
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <select class="seletpicker" id="type_select">
+                                <option value="0">所有类别</option>
+                                <option value="1">经济金融类</option>
+                                <option value="2">教育考试类</option>
+                                <option value="3">计算机与网络类</option>
+                                <option value="4">语言学习类</option>
+                                <option value="5">管理类</option>
+                                <option value="6">医学卫生类</option>
+                                <option value="7">科技工程类</option>
+                                <option value="8">少儿类</option>
+                                <option value="9">文学小说类</option>
+                                <option value="10">文化历史类</option>
+                                <option value="11">法律类</option>
+                                <option value="12">建筑类</option>
+                                <option value="13">新闻传播类</option>
+                                <option value="14">家庭育儿类</option>
+                                <option value="15">艺术类</option>
+                                <option value="16">生活时尚类</option>
+                                <option value="17">旅游地理类</option>
+                                <option value="18">心理类</option>
+                                <option value="19">宗教哲学类</option>
+                                <option value="20">社会科学类</option>
+                                <option value="21">自然科学类</option>
+                                <option value="22">政治军事类</option>
+                                <option value="23">其他类</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <select class="seletpicker" id="aim_select">
+                                <option value="0">购买</option>
+                                <option value="1">出售（查看求购信息）</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <select class="seletpicker" id="order_select">
+                                <option value="0">按发布时间 降序</option>
+                                <option value="1">按发布时间 升序</option>
+                                <option value="2">按书籍售价 降序</option>
+                                <option value="3">按书籍售价 升序</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="text-center"><button type="submit" id="search_submit">搜索</button></div>
+                    <div id="errormessage"> </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--==========================
+Porfolio Section
+============================-->
+<section id="books">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">书库</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">在这里，你可以找到想要购买的书</p>
+            </div>
+        </div>
+        <div id="allBooks">
+            <div class="row">
+                <div class="col-md-3">
+                    <p style="position: center;"> 《游戏使我快乐》 </p>
+                    <p> <b>RMB 48.5</b> <s>50</s></p>
+                    <a class="portfolio-item" style="background-image: url(../static/img/portfolio-1.jpg);" href="">
+                        <div class="details">
+                            <h4>Portfolio 1</h4>
+                            <span>Alored dono par</span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div> 《游戏使我快乐》 </div>
+                    <a class="portfolio-item" style="background-image: url(../static/img/portfolio-2.jpg);" href="">
+                        <div class="details">
+                            <h4>Portfolio 2</h4>
+                            <span>Alored dono par</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <div> 《游戏使我快乐》 </div>
+                    <a class="portfolio-item" style="background-image: url(../static/img/portfolio-3.jpg);" href="">
+                        <div class="details">
+                            <h4>Portfolio 3</h4>
+                            <span>Alored dono par</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <div> 《游戏使我快乐》 </div>
+                    <a class="portfolio-item" style="background-image: url(../static/img/portfolio-4.jpg);" href="">
+                        <div class="details">
+                            <h4>Portfolio 4</h4>
+                            <span>Alored dono par</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <div> 《游戏使我快乐》 </div>
+                    <a class="portfolio-item" style="background-image: url(../static/img/portfolio-5.jpg);" href="">
+                        <div class="details">
+                            <h4>Portfolio 5</h4>
+                            <span>Alored dono par</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <div> 《游戏使我快乐》 </div>
+                    <a class="portfolio-item" style="background-image: url(../static/img/portfolio-6.jpg);" href="">
+                        <div class="details">
+                            <h4>Portfolio 6</h4>
+                            <span>Alored dono par</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <div> 《游戏使我快乐》 </div>
+                    <a class="portfolio-item" style="background-image: url(../static/img/portfolio-7.jpg);" href="">
+                        <div class="details">
+                            <h4>Portfolio 7</h4>
+                            <span>Alored dono par</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <div> 《游戏使我快乐》 </div>
+                    <a class="portfolio-item" style="background-image: url(../static/img/portfolio-8.jpg);" href="">
+                        <div class="details">
+                            <h4>Portfolio 8</h4>
+                            <span>Alored dono par</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!--==========================
+Footer
+============================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright">
+                    &copy; Copyright <strong>ItemZheng</strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="http://www.itemzheng.top:8080/">Item Zheng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+</body>
+
+</html>

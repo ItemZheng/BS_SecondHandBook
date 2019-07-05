@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>购买</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+
+
+    <!-- Libraries CSS Files -->
+    <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../static/lib/animate-css/animate.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="../static/css/addOrder.css" rel="stylesheet">
+
+    <!-- Required JavaScript Libraries -->
+    <script src="../static/lib/jquery/jquery.min.js"></script>
+    <script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/lib/superfish/hoverIntent.js"></script>
+    <script src="../static/lib/superfish/superfish.min.js"></script>
+    <script src="../static/lib/morphext/morphext.min.js"></script>
+    <script src="../static/lib/wow/wow.min.js"></script>
+    <script src="../static/lib/stickyjs/sticky.js"></script>
+    <script src="../static/lib/easing/easing.js"></script>
+
+    <!-- Template Specisifc Custom Javascript File -->
+    <script src="../static/js/addOrder.js"></script>
+
+    <script src="../static/contactform/contactform.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-zh_CN.min.js"></script>
+
+</head>
+
+<body>
+<div id="preloader"></div>
+
+<!--==========================
+Header Section
+============================-->
+<header id="header">
+    <div class="container">
+
+        <div id="logo" class="pull-left">
+            <a href="#search"><img src="../static/img/logo.png" alt="" title="" /></img></a>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="#search">搜索</a></li>
+                <li><a href="#books">书库</a></li>
+                <li><a href="#">订单</a></li>
+                <li><a href="#" class="menu-has-children">消息</a>
+                    <ul>
+                        <li><a href="#" class="menu-has-children">未读消息</a>
+                            <ul>
+                                <li><a href="#">ItemZheng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">发起聊天</a></li>
+                    </ul>
+
+                </li>
+                <li class="menu-has-children"><a href="">个人中心</a>
+                    <ul>
+                        <li><a href="#">基本资料</a></li>
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="/fe/addBook">发布书籍</a></li>
+                    </ul>
+                </li>
+                <li><a id="welcome_info">欢迎，ItemZheng</a></li>
+            </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+    </div>
+</header>
+<!-- #header -->
+
+<!--==========================
+About Section
+============================-->
+<section id="search">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title" id="buy_title">购买</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">购买书籍</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-md-push-2">
+            <div class="info">
+                <div>
+                    <i class="fa fa-mail-reply"></i>
+                    <p>交易方式</p>
+                </div>
+
+                <div class="mail_way_need">
+                    <i class="fa fa-address-card"></i>
+                    <p>地址</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-5 col-md-push-2">
+            <div class="form">
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="form-group">
+                        <label>
+                            <select class="seletpicker" id="type_way">
+                                <option value="0">邮寄</option>
+                                <option value="1">线下交易</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="address" class="form-control mail_way_need" id="order_address" placeholder="地址" />
+                    </div>
+                    <div class="text-center"><button type="submit" id="buy_submit">购买</button></div>
+                    <div id="errormessage"> </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+
+</html>
