@@ -76,7 +76,7 @@ function initWebSocket() {
     var webSocket;
     if ("WebSocket" in window)
     {
-        webSocket = new WebSocket("ws://localhost:3333/websocket/" + userId);
+        webSocket = new WebSocket("ws://www.itemzheng.top:3333/websocket/" + userId);
 
         webSocket.onopen = function()
         {
